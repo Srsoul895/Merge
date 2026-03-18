@@ -1,0 +1,124 @@
+/* ===== RESET BÁSICO ===== */
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #0f172a;
+color: #e2e8f0;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+text-align: center;
+padding: 30px;
+background: linear-gradient(90deg, #1e3a8a, #0ea5e9);
+
+/* Animação de entrada */
+animation: fadeIn 2s ease-in-out;
+}
+
+/* ===== MENU ===== */
+nav {
+background-color: #020617;
+text-align: center;
+padding: 10px;
+}
+
+nav a {
+color: #38bdf8;
+margin: 10px;
+text-decoration: none;
+font-weight: bold;
+
+/* Efeito suave */
+transition: 0.3s;
+}
+
+/* Hover (quando passa o mouse) */
+nav a:hover {
+color: #facc15;
+transform: scale(1.1);
+}
+
+/* ===== SEÇÕES ===== */
+section {
+max-width: 900px;
+margin: auto;
+padding: 40px;
+
+/* Animação */
+animation: slideUp 1s ease;
+}
+
+/* Títulos */
+h2 {
+color: #38bdf8;
+border-bottom: 2px solid #38bdf8;
+}
+
+/* Imagens */
+img {
+width: 100%;
+border-radius: 10px;
+margin: 20px 0;
+
+/* Efeito hover */
+transition: transform 0.3s;
+}
+
+img:hover {
+transform: scale(1.05);
+}
+
+/* Lista */
+ul {
+line-height: 1.8;
+}
+
+/* Rodapé */
+footer {
+text-align: center;
+padding: 20px;
+background-color: #020617;
+}
+
+/* ===== ANIMAÇÕES ===== */
+
+/* Fade */
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+/* Subindo */
+@keyframes slideUp {
+from {
+transform: translateY(30px);
+opacity: 0;
+}
+to {
+transform: translateY(0);
+opacity: 1;
+}
+}
+
+/* ===== RESPONSIVO (CELULAR) ===== */
+@media (max-width: 600px) {
+
+header h1 {
+font-size: 1.8em;
+}
+
+nav a {
+display: block;
+margin: 10px 0;
+}
+
+section {
+padding: 20px;
+}
+
+}
