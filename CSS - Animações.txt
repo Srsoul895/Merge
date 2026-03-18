@@ -1,0 +1,168 @@
+🎬 1. Fade In (aparecer suavemente)
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: fadeIn 2s ease-in-out;
+}
+
+-> USO NO HTML
+<div class="fade">Texto aparecendo</div>
+
+
+
+⬆️ 2. Slide Up (subindo)
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 1s ease;
+}
+
+
+➡️ 3. Slide Left (vem da esquerda)
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-left {
+  animation: slideLeft 1s ease;
+}
+
+
+🔄 4. Rotação (girar)
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 2s linear infinite;
+}
+
+
+
+💓 5. Pulsar (efeito de batida)
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+
+🫨 6. Shake (tremendo)
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+
+🌈 7. Mudança de cor
+@keyframes colorChange {
+  0% { color: red; }
+  50% { color: yellow; }
+  100% { color: blue; }
+}
+
+.color {
+  animation: colorChange 3s infinite;
+}
+
+🔍 8. Zoom (crescer)
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom {
+  animation: zoomIn 1s ease;
+}
+
+
+🎯 9. Bounce (quicar)
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+🧠 Dica importante (nível avançado)
+Você pode controlar melhor a animação:
+
+CSS
+animation: nome duração tipo delay repetição;
+
+animation: slideUp 1s ease 0.5s infinite;
+
+1s → duração
+ease → suavidade
+0.5s → atraso
+infinite → repete
+
+
+💡 Ideias pra usar no seu site
+
+- Título → fade + slide
+
+- Imagens → zoom
+
+- Botões → pulse
+
+- Menu → hover + scale
+
+- Ícones → rotate
