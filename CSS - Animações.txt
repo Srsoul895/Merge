@@ -16,7 +16,6 @@
 <div class="fade">Texto aparecendo</div>
 
 
-
 ⬆️ 2. Slide Up (subindo)
 @keyframes slideUp {
   from {
@@ -64,7 +63,6 @@
 .rotate {
   animation: rotate 2s linear infinite;
 }
-
 
 
 💓 5. Pulsar (efeito de batida)
@@ -141,28 +139,22 @@
   animation: bounce 1s infinite;
 }
 
-🧠 Dica importante (nível avançado)
+
+🧠 Nível Avançado
 Você pode controlar melhor a animação:
 
 CSS
 animation: nome duração tipo delay repetição;
-
 animation: slideUp 1s ease 0.5s infinite;
 
-1s → duração
-ease → suavidade
-0.5s → atraso
-infinite → repete
-
+- 1s → duração
+- ease → suavidade
+- 0.5s → atraso
+- infinite → repete
 
 💡 Ideias pra usar no seu site
-
 - Título → fade + slide
-
 - Imagens → zoom
-
 - Botões → pulse
-
 - Menu → hover + scale
-
 - Ícones → rotate
