@@ -10,7 +10,11 @@ color: #e2e8f0;
 header {
 text-align: center;
 padding: 30px;
+<<<<<<< HEAD
 background: linear-gradient(90deg,#00C5CD, #00868B);
+=======
+background: linear-gradient(90deg, #00C5CD, #00868B);
+>>>>>>> 94f37d1bb688621b45bae87dfa0bf0558124d6be
 
 /* Animação de entrada */
 animation: fadeIn 2s ease-in-out;
